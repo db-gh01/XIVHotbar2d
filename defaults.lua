@@ -29,25 +29,25 @@
 local defaults = {}
 
 defaults.General = {}
-defaults.General.HideEnvironment = false 
+defaults.General.HideEnvironment = true
 defaults.General.HideInventoryCount = false
 defaults.General.EnableWeaponSwitching = false
 defaults.General.HideHotbarNumbers = false
 
 defaults.Hotbar = {}
 defaults.Hotbar.ShowActionDescription = true
-defaults.Hotbar.HideEmptySlots = true
+defaults.Hotbar.HideEmptySlots = false
 defaults.Hotbar.HideActionName = false
 defaults.Hotbar.HideActionCost = true
 defaults.Hotbar.HideSlotFrame = false
 
 defaults.Hotbar.Offsets = {}
-defaults.Hotbar.Offsets.First  = { Vertical = false, OffsetX = 675, OffsetY = 1010 }
-defaults.Hotbar.Offsets.Second = { Vertical = false, OffsetX = 675, OffsetY = 956 }
-defaults.Hotbar.Offsets.Third  = { Vertical = false, OffsetX = 675, OffsetY = 902 }
-defaults.Hotbar.Offsets.Fourth = { Vertical = false, OffsetX = 675, OffsetY = 848 }
-defaults.Hotbar.Offsets.Fifth  = { Vertical = true, OffsetX = 1380, OffsetY = 740 }
-defaults.Hotbar.Offsets.Sixth  = { Vertical = true, OffsetX = 1490, OffsetY = 740 }
+defaults.Hotbar.Offsets.First  = { Vertical = false, OffsetX = 100, OffsetY = 100 }
+defaults.Hotbar.Offsets.Second = { Vertical = false, OffsetX = 100, OffsetY = 150 }
+defaults.Hotbar.Offsets.Third  = { Vertical = false, OffsetX = 100, OffsetY = 200 }
+defaults.Hotbar.Offsets.Fourth = { Vertical = false, OffsetX = 100, OffsetY = 250 }
+defaults.Hotbar.Offsets.Fifth  = { Vertical = true, OffsetX = 700, OffsetY = 100 }
+defaults.Hotbar.Offsets.Sixth  = { Vertical = true, OffsetX = 900, OffsetY = 100 }
 
 defaults.Hotbar.Theme = {}
 defaults.Hotbar.Theme.Slot = 'ffxiv'
@@ -58,7 +58,7 @@ defaults.Hotbar.Style.HotbarCount = 6
 defaults.Hotbar.Style.HotbarLength = 12
 defaults.Hotbar.Style.SlotIconScale = 1
 defaults.Hotbar.Style.SlotAlpha = 100
-defaults.Hotbar.Style.SlotSpacing = 14
+defaults.Hotbar.Style.SlotSpacing = 3
 defaults.Hotbar.Style.HotbarSpacing = 56
 defaults.Hotbar.Style.OffsetX = 0
 defaults.Hotbar.Style.OffsetY = 0
@@ -151,7 +151,6 @@ defaults.Texts.Recasts.Stroke.Alpha = 200
 defaults.Texts.Recasts.Stroke.Red = 20
 defaults.Texts.Recasts.Stroke.Green = 20
 defaults.Texts.Recasts.Stroke.Blue = 20
-
 
 -- Hotbar Numbers
 defaults.Texts.HotbarNumbers = {}
