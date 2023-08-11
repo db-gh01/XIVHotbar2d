@@ -15,6 +15,6 @@ settings.xml > Hotbar > HideSlotFrame をtrueにすると枠が描画されま�
 使い方については[XIVHotbar2](https://github.com/Technyze/XIVHotbar2)のREADMEなどを参照してください。
 
 ホットバー定義のサンプルとして、`data/PLD.lua`が格納されています。
-![サンプルのPLD.luaを利用した場合の表示例](images/readme/image.png)
+![サンプルのPLD.luaを利用した場合の表示例](images/readme/hotbar_sample.png)
 
 [^1]: さらに元となるのは [xivhotbar](https://github.com/SirEdeonX/FFXIAddons/tree/master/xivhotbar)(SirEdeonXさん) と [XIVHotbar - \[Version 0.5\]](https://github.com/Akirane/XIVHotbar)(Akiraneさん)
