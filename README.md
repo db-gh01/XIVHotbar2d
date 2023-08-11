@@ -8,7 +8,7 @@ Technyzeさん作の[XIVHotbar2](https://github.com/Technyze/XIVHotbar2)[^1]を�
 `data/キャラ名/ジョブ名.lua`を優先的に読みますが、それが存在しない場合には `data/ジョブ名.lua`を読み込みます。
 - ホットバーアイコンの枠を描画しないオプションを追加  
 settings.xml > Hotbar > HideSlotFrame をtrueにすると枠が描画されません。
-- HorizenXIサーバ用モードを削除  
+- HorizonXIサーバ用モードを削除  
 （Windower純正のリソースファイルのみを利用するようにしたかったため）
 - その他細かな修正
 
