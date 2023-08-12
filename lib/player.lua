@@ -152,29 +152,28 @@ end
 -- execute action from given slot
 function player:execute_action(slot)
     action = action_manager:get_action(slot)
+    if not action then return end
 
-    if action == nil then return end
-
+    local command = windower.to_shift_jis(action.action)
+    command = command:gsub(string.char(0x5C), string.char(0x5C, 0x5C, 0x5C))
     if action.type == 'ct' then
         local command = '/' .. action.action
-
         if action.target ~= nil and action.target ~= "" then
             command = command .. ' <' .. action.target .. '>'
         end
-
         windower.chat.input(command)
         return
     elseif action.type == 'macro' then -- Single line macro in the JOB.lua file. Seperated by semicolons.
-        windower.chat.input('//' .. windower.to_shift_jis(action.action))
+        windower.chat.input('//' .. command)
     elseif action.type == 'gs' then -- Gear Swap
-        windower.chat.input('//gs ' .. windower.to_shift_jis(action.action))
+        windower.chat.input('//gs ' .. command)
     elseif action.type == 's' then
-        windower.chat.input('//send ' .. windower.to_shift_jis(action.action))
+        windower.chat.input('//send ' .. command)
     elseif action.type == 'input' then
-        windower.chat.input('//input ' .. windower.to_shift_jis(action.action))
+        windower.chat.input('//input ' .. command)
     else
         windower.chat.input('/' ..
-        action.type .. ' "' .. windower.to_shift_jis(action.action) .. '" <' .. action.target .. '>')                            -- This is for JA, WS and MA
+        action.type .. ' "' .. command .. '" <' .. action.target .. '>')                            -- This is for JA, WS and MA
     end
 end
 
