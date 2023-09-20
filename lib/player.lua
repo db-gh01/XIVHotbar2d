@@ -69,7 +69,6 @@ function player:initialize(windower_player, theme_options)
     action_manager:initialize(theme_options)
     action_manager:update_file_path(player.name, player.main_job)
     for _, id in pairs(windower_player.buffs) do
-        print(id)
         if id == 358 then
             action_manager:update_stance(211)
         elseif id == 359 then
