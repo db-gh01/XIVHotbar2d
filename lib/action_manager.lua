@@ -206,7 +206,7 @@ end
 function get_recast_id_by_name(type, action)
     local res = nil
     if type == 'ja' then
-        res = resources.ability_recasts
+        res = resources.job_abilities
     elseif type == 'ma' then
         res = resources.spells
     else
@@ -214,7 +214,7 @@ function get_recast_id_by_name(type, action)
     end
     for k, v in pairs(res) do
         if v.name:lower() == action:lower() then
-            return v.id
+            return v.recast_id
         end
     end
     return nil
